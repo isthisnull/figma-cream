@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mostSale {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+}
+.card {
+  border-radius: 10px;
+  min-width: 50px;
+  width: 250px;
+  height: 300px;
+  border: 1px solid green;
+}
