@@ -17,10 +17,16 @@ export const MostSale = () => {
       </div>
       <div className="carousel">
         <div className="card">
-          <div className="img"></div>
+          <div className="imgContainer">
+            <img
+              src=".\src\assets\unnamed (1).jpg"
+              alt="product"
+              className="img"
+            />
+          </div>
           <div className="info">
             <div className="name">پرایمر براق گلدن رز صورت</div>
-            <div className="mainPrice">129000 تومان</div>
+            <div className="mainPrice">تومان 129000 </div>
             <div className="salePrice">88000 تومان</div>
           </div>
           <div className="buy">

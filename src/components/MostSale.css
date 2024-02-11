@@ -1,3 +1,6 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -14,4 +17,16 @@
   width: 250px;
   height: 300px;
   border: 1px solid green;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.img {
+  width: 100%;
+  border-radius: 10px;
+}
+.carousel1 {
+  border: 1px solid red;
 }
