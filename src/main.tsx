@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import MostSale from "./components/MostSale";
-import Carousel from "./components/Carousel.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
     <MostSale />
-    <Carousel />
   </React.StrictMode>
 );

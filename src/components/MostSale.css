@@ -6,17 +6,19 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.mostSale {
-  width: 500px;
-  height: 500px;
-  border: 1px solid red;
-}
+
 .card {
   border-radius: 10px;
-  min-width: 50px;
-  width: 250px;
+  width: 350px;
   height: 300px;
   border: 1px solid green;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  scroll-snap-align: center;
+  /*   width: 100%; */
 }
 .info {
   display: flex;
@@ -24,9 +26,59 @@ body {
   align-items: end;
 }
 .img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
 }
-.carousel1 {
-  border: 1px solid red;
+.container {
+  height: 500px;
+  position: relative;
+}
+.carousel {
+  height: 500px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  overflow-x: scroll;
+  scrollbar-color: #e90808 transparent;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+/* ///************* */
+
+.carousel2 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slide2 {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  scroll-snap-align: center;
+  width: 100%;
+}
+
+.carousel2 {
+  scrollbar-color: #aa6262 transparent;
+}
+
+.carousel2::-webkit-scrollbar {
+  height: 2rem;
+}
+
+.carousel2::-webkit-scrollbar-track {
+  background: gainsboro;
+  padding: 0.625rem;
+  margin: 0 10vw; /* Customize this value */
+}
+
+.carousel2::-webkit-scrollbar-thumb {
+  background-color: slategrey;
+  border: 0.5rem solid gainsboro;
 }
